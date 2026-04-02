@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { Suspense } from 'react';
 import { Link } from 'react-router';
 
 const User = ({data}) => {
@@ -16,6 +16,7 @@ const User = ({data}) => {
             <p>Email: {email}</p>
             <p>Phone: {phone}</p>
             <Link to={`/users/${id}`}>Show Details</Link>
+         
         </div>
     );
 };
